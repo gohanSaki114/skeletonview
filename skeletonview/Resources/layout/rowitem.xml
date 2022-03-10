@@ -6,17 +6,27 @@
     android:gravity="center"
     android:layout_height="wrap_content">
     <ImageView
-        android:src="@drawable/goki"
+        android:src="@drawable/rengoku"
         android:layout_width="45dp"
         android:layout_height="45dp"/>
     <TextView
         android:padding="10dp"
-        android:layout_gravity="center"
+    android:layout_marginLeft="60dp"
         android:text="goku"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:gravity="center"
+
         android:id="@+id/textitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <TextView
+        android:padding="10dp"
+        android:layout_marginLeft="40dp"
+        android:text="powers"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/item3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
