@@ -41,7 +41,7 @@ namespace skeletonview
             recycler.Visibility = Android.Views.ViewStates.Invisible;
             recycler.SetAdapter(mAdapter);
             shimmerLayout.StartShimmerAnimation();
-
+            blocker();
           //  Parallel.Invoke(
           //    () => {
           //        showshimmer(3000);
@@ -67,14 +67,14 @@ namespace skeletonview
             //recycler.Visibility = Android.Views.ViewStates.Visible;
 
 
-           
+
 
         }
 
         
-        protected override async void OnResume()
+        protected  async void blocker()
         {
-            base.OnResume();
+          
             await Task.Delay(3000);
             recycler.Visibility = Android.Views.ViewStates.Visible;
             shimmerLayout.StopShimmerAnimation();

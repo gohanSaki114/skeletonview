@@ -9,7 +9,6 @@
     <io.supercharge.shimmerlayout.ShimmerLayout
         android:layout_width="match_parent"
         android:id="@+id/shimeerlayout"
-   
         android:layout_height="wrap_content">
         <LinearLayout
             android:id="@+id/linear"

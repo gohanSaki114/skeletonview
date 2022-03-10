@@ -37,7 +37,7 @@ namespace skeletonview
         {
             MyViewHolder vh = holder as MyViewHolder;
 
-            vh.textView.Text = employeenames[position].ToString();
+            //vh.textView.Text = employeenames[position].ToString();
             vh.textView.Click += delegate {
                 Toast.MakeText(con, "message", ToastLength.Long).Show();
             };
